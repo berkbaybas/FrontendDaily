@@ -1,5 +1,5 @@
 # DEMO 
-https://frontend-daily.vercel.app/
+https://frontend-day1.vercel.app/
 
 ## Tools
 

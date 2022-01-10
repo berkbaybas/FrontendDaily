@@ -569,5 +569,135 @@ main .main-content .card-footer i {
 main .right-sidebar {
   width: 270px;
 }
+main .right-sidebar .feeds {
+  background-color: white;
+  padding: 16px;
+  border-radius: 6px;
+}
+main .right-sidebar .feeds h4 {
+  color: #17272f;
+  font-size: 14px;
+}
+main .right-sidebar .feeds .hr {
+  height: 1px;
+  background-color: #edf0f5;
+  margin-top: 8px;
+  margin-top: 16px;
+}
+main .right-sidebar .feeds-company {
+  display: flex;
+  margin-top: 16px;
+}
+main .right-sidebar .feeds-company img {
+  height: 24px;
+  width: 24px;
+  margin-right: 8px;
+}
+main .right-sidebar .feeds-company-info .company-name {
+  font-size: 14px;
+  font-weight: 500;
+}
+main .right-sidebar .feeds-company-info .company-description {
+  font-size: 12px;
+  color: #aaaaaa;
+}
+main .right-sidebar .feeds-company button {
+  margin-left: auto;
+  background-color: transparent;
+  border: 1.5px solid #006699;
+  border-radius: 4px;
+  padding: 5px;
+}
+main .right-sidebar .feeds-company button i {
+  color: #006699;
+}
+main .right-sidebar .feeds-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .right-sidebar .feeds-footer a {
+  display: inline-flex;
+  margin-top: 36px;
+  text-align: center;
+  color: #006699;
+  font-weight: 500;
+}
+main .right-sidebar .advertisement {
+  padding: 16px;
+  background-color: white;
+  margin-top: 12px;
+  border-radius: 6px;
+}
+main .right-sidebar .advertisement h4 {
+  color: #17272f;
+  font-size: 14px;
+}
+main .right-sidebar .advertisement span {
+  color: #f5f6f8;
+  font-size: 10px;
+}
+main .right-sidebar .advertisement .hr {
+  height: 1px;
+  background-color: #edf0f5;
+  margin-bottom: 16px;
+  margin-top: 8px;
+}
+main .right-sidebar .advertisement-avatar img {
+  height: 72px;
+  width: 72px;
+  border-radius: 72px;
+}
+main .right-sidebar .advertisement-avatar img:not(:first-child) {
+  margin-left: 32px;
+}
+main .right-sidebar .advertisement-text {
+  margin-top: 20px;
+  color: #17272f;
+  font-size: 14px;
+}
+main .right-sidebar .advertisement-footer {
+  margin-top: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .right-sidebar .advertisement-footer a {
+  color: #006699;
+  font-weight: 500;
+}
+main .right-sidebar .sidebar-footer footer {
+  margin-top: 54px;
+}
+main .right-sidebar .sidebar-footer footer ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+main .right-sidebar .sidebar-footer footer ul li a {
+  color: #aaaaaa;
+  font-size: 10px;
+}
+main .right-sidebar .sidebar-footer footer ul li:not(:last-child) {
+  margin-right: 21px;
+}
+main .right-sidebar .sidebar-footer footer .hr {
+  height: 1px;
+  background-color: #dedede;
+  margin-top: 16px;
+  margin-bottom: 12px;
+}
+main .right-sidebar .sidebar-footer footer .company-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .right-sidebar .sidebar-footer footer .company-info p {
+  font-size: 12px;
+  color: #aaaaaa;
+}
+main .right-sidebar .sidebar-footer footer .company-info img {
+  height: 12px;
+  width: 44px;
+}
 
 /*# sourceMappingURL=style.css.map */

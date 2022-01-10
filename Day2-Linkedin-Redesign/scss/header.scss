@@ -50,15 +50,15 @@
           span {
             display: none;
           }
-        }
-        .active {
-          i {
-            color: $active-blue;
-          }
-          span {
-            display: block;
-            font-weight: 500;
-            color: $active-blue;
+          &.active {
+            i {
+              color: $active-blue;
+            }
+            span {
+              display: block;
+              font-weight: 500;
+              color: $active-blue;
+            }
           }
         }
       }

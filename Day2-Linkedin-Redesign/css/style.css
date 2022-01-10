@@ -3,11 +3,7 @@
 @font-face {
   font-family: "iconfont";
   src: url("../font/iconfont.eot?82934119");
-  src: url("../font/iconfont.eot?82934119#iefix") format("embedded-opentype"),
-    url("../font/iconfont.woff2?82934119") format("woff2"),
-    url("../font/iconfont.woff?82934119") format("woff"),
-    url("../font/iconfont.ttf?82934119") format("truetype"),
-    url("../font/iconfont.svg?82934119#iconfont") format("svg");
+  src: url("../font/iconfont.eot?82934119#iefix") format("embedded-opentype"), url("../font/iconfont.woff2?82934119") format("woff2"), url("../font/iconfont.woff?82934119") format("woff"), url("../font/iconfont.ttf?82934119") format("truetype"), url("../font/iconfont.svg?82934119#iconfont") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -21,8 +17,7 @@
   }
 }
 */
-[class^="icon-"]:before,
-[class*=" icon-"]:before {
+[class^=icon-]:before, [class*=" icon-"]:before {
   font-family: "iconfont";
   font-style: normal;
   font-weight: normal;
@@ -169,15 +164,20 @@
 }
 
 body {
-  width: 1040px;
-  margin-left: auto;
-  margin-right: auto;
+  background-color: #f5f6f7;
 }
 
 .header {
+  margin-bottom: 16px;
+  background-color: #fff;
+}
+.header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 1040px;
+  margin-left: auto;
+  margin-right: auto;
   height: 56px;
 }
 .header-logo {
@@ -224,10 +224,10 @@ body {
 .header-menu nav ul li span {
   display: none;
 }
-.header-menu nav ul .active i {
+.header-menu nav ul li.active i {
   color: #006699;
 }
-.header-menu nav ul .active span {
+.header-menu nav ul li.active span {
   display: block;
   font-weight: 500;
   color: #006699;
@@ -257,6 +257,317 @@ body {
 }
 .header-profile i {
   color: #dedede;
+}
+
+main {
+  width: 1040px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+main .left-sidebar {
+  width: 270px;
+}
+main .left-sidebar .profile {
+  padding: 16px;
+  background: white;
+  border-radius: 6px;
+}
+main .left-sidebar .profile-background {
+  width: 100%;
+  height: 43px;
+  border-radius: 4px;
+  background-image: url("../images/cover-bg.png");
+}
+main .left-sidebar .profile-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: -26px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #c4c4c4;
+}
+main .left-sidebar .profile-card img {
+  height: 56px;
+  width: 56px;
+  border-radius: 56px;
+  border: 3px solid white;
+}
+main .left-sidebar .profile-card-name {
+  color: #17272f;
+  font-weight: 900;
+  margin-top: 8px;
+}
+main .left-sidebar .profile-card-title {
+  font-size: 14px;
+  color: #aaaaaa;
+  margin-top: 4px;
+}
+main .left-sidebar .profile-stats {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+main .left-sidebar .profile-stats-title {
+  font-size: 14px;
+}
+main .left-sidebar .profile-stats-count {
+  color: #006699;
+}
+main .left-sidebar .tag {
+  background-color: white;
+  padding: 16px;
+  margin-top: 16px;
+}
+main .left-sidebar .tag-wrapper h4 {
+  text-transform: uppercase;
+  color: #17272f;
+  margin-bottom: 8px;
+}
+main .left-sidebar .tag-wrapper .hr {
+  height: 1px;
+  background-color: #edf0f5;
+}
+main .left-sidebar .tag-wrapper-list {
+  margin-top: 12px;
+}
+main .left-sidebar .tag-wrapper-list li {
+  color: #006699;
+}
+main .left-sidebar .tag-wrapper-list li:not(:last-child) {
+  margin-bottom: 8px;
+}
+main .left-sidebar .tag-wrapper-list li .icon-users {
+  height: 12px;
+  width: 12px;
+}
+main .left-sidebar .tag-wrapper:first-child {
+  margin-bottom: 36px;
+}
+main .left-sidebar .event {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  height: 51px;
+  background-color: white;
+  margin-top: 16px;
+  border-radius: 6px;
+}
+main .left-sidebar .event-title {
+  font-size: 14px;
+  font-weight: 800;
+}
+main .left-sidebar .event-icon-wrapper i {
+  height: 20px;
+  width: 20px;
+  color: #006699;
+}
+main .left-sidebar .more {
+  margin-top: 16px;
+  border-radius: 6px;
+}
+main .left-sidebar .more button {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #006699;
+  background-color: white;
+  height: 56px;
+  font-weight: 900;
+}
+main .main-content {
+  margin-left: 30px;
+  margin-right: 30px;
+  flex: 1;
+}
+main .main-content .share {
+  background-color: white;
+  padding: 15px 25px;
+  border-radius: 6px;
+}
+main .main-content .share textarea {
+  height: 56px;
+  width: 100%;
+  resize: none;
+  padding: 8px;
+  border-bottom: 1px solid #edf0f5;
+}
+main .main-content .share-option {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+main .main-content .share-option i {
+  height: 20px;
+  width: 20px;
+  margin-right: 8px;
+}
+main .main-content .share-option .icon-camera {
+  color: #31b057;
+}
+main .main-content .share-option .icon-video {
+  color: #006699;
+}
+main .main-content .share-option .icon-calendar {
+  color: #fc8338;
+}
+main .main-content .share-option .icon-thumbs-up {
+  color: #e52a34;
+}
+main .main-content .share-option span {
+  font-size: 14px;
+  color: #17272f;
+}
+main .main-content .filter {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 16px 12px 20px;
+  margin-top: 20px;
+  background-color: rgba(222, 222, 222, 0.24);
+  border-radius: 6px;
+}
+main .main-content .filter p {
+  font-size: 14px;
+}
+main .main-content .filter-dropdown {
+  font-size: 14px;
+}
+main .main-content .filter-dropdown span {
+  margin-right: 8px;
+  font-weight: 500;
+}
+main .main-content .filter-dropdown i {
+  color: #aaaaaa;
+}
+main .main-content .card {
+  padding: 16px;
+  background-color: white;
+  border-radius: 6px;
+  margin-top: 14px;
+}
+main .main-content .card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #edf0f5;
+}
+main .main-content .card-header-info {
+  display: flex;
+  align-items: start;
+}
+main .main-content .card-header-info img {
+  height: 36px;
+  width: 36px;
+  border-radius: 36px;
+}
+main .main-content .card-header-info .meta {
+  margin-left: 12px;
+  font-size: 10px;
+  color: #aaaaaa;
+}
+main .main-content .card-header-info .meta-name {
+  font-size: 14px;
+  color: #17272f;
+  margin-bottom: 2px;
+  font-weight: 500;
+}
+main .main-content .card-header-info .meta-title {
+  margin-bottom: 2px;
+}
+main .main-content .card-header .detail {
+  color: #aaaaaa;
+}
+main .main-content .card-content {
+  margin-top: 16px;
+}
+main .main-content .card-content-text {
+  color: #17272f;
+  font-size: 14px;
+}
+main .main-content .card-content-tag {
+  color: #006699;
+  margin-top: 12px;
+  font-weight: 500;
+  font-size: 12px;
+}
+main .main-content .card-content-img {
+  height: 230px;
+  width: 100%;
+  border-radius: 6px;
+}
+main .main-content .card-content-count {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+main .main-content .card-content-count .count-icon .icon-heart {
+  color: #e52a34;
+}
+main .main-content .card-content-count .count-icon .icon-thumbs-up {
+  color: #388bf2;
+}
+main .main-content .card-content-count .count-info {
+  margin-left: 22px;
+  font-size: 10px;
+}
+main .main-content .card-content .hr {
+  height: 1px;
+  background-color: #edf0f5;
+  margin-top: 14px;
+  margin-bottom: 14px;
+}
+main .main-content .card-content-stats {
+  display: flex;
+  color: #aaaaaa;
+  font-weight: 300;
+}
+main .main-content .card-content-stats > div:not(:first-child) {
+  margin-left: 16px;
+}
+main .main-content .card-content-stats span {
+  margin-left: 2px;
+}
+main .main-content .card-footer {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+main .main-content .card-footer img {
+  height: 32px;
+  width: 32px;
+  border-radius: 32px;
+}
+main .main-content .card-footer input {
+  margin-left: 12px;
+  height: 48px;
+  border: 1px solid #edf0f5;
+  border-radius: 6px;
+  width: 100%;
+  padding: 16px;
+}
+main .main-content .card-footer input::placeholder {
+  color: #dedede;
+}
+main .main-content .card-footer hr {
+  height: 1px;
+  width: 1px;
+  color: #dedede;
+  position: absolute;
+  right: 48px;
+}
+main .main-content .card-footer i {
+  position: absolute;
+  right: 16px;
+  color: #dedede;
+}
+main .right-sidebar {
+  width: 270px;
 }
 
 /*# sourceMappingURL=style.css.map */

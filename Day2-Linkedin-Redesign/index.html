@@ -9,35 +9,177 @@
   </head>
   <body>
     <header class="header">
-      <div class="header-logo">
-        <img src="./images/logo.svg" />
-        <div class="search">
-          <i class="icon-search"></i>
-          <input type="text" placeholder="Search.." />
+      <div class="container">
+        <div class="header-logo">
+          <img src="./images/logo.svg" />
+          <div class="search">
+            <i class="icon-search"></i>
+            <input type="text" placeholder="Search.." />
+          </div>
         </div>
-      </div>
-      <div class="header-menu">
-        <nav>
-          <ul>
-            <li class="active"><i class="icon-home"> </i><span>Home</span></li>
-            <li><i class="icon-users"> </i><span>Users</span></li>
-            <li><i class="icon-briefcase"> </i><span>Briefcase</span></li>
-            <li><i class="icon-message"> </i><span>Message</span></li>
-            <li>
-                <i class="icon-notification"> <span>Notification</span></i
-            </li>
-            <li><i class="icon-grid"> </i><span>Grid</span></li>
-          </ul>
-        </nav>
-      </div>
-      <div class="header-profile">
-        <div class="header-profile-wrapper">
-          <p class="header-profile-name">Cameron Williamson</p>
-          <span class="header-profile-status">Online</span>
+        <div class="header-menu">
+          <nav>
+            <ul>
+              <li class="active">
+                <i class="icon-home"> </i><span>Home</span>
+              </li>
+              <li><i class="icon-users"> </i><span>Users</span></li>
+              <li><i class="icon-briefcase"> </i><span>Briefcase</span></li>
+              <li><i class="icon-message"> </i><span>Message</span></li>
+              <li>
+                <i class="icon-notification"> <span>Notification</span></i>
+              </li>
+              <li><i class="icon-grid"> </i><span>Grid</span></li>
+            </ul>
+          </nav>
         </div>
-        <img src="./images/avatar.png" />
-        <i class="icon-down-open"></i>
+        <div class="header-profile">
+          <div class="header-profile-wrapper">
+            <p class="header-profile-name">Cameron Williamson</p>
+            <span class="header-profile-status">Online</span>
+          </div>
+          <img src="./images/avatar.png" />
+          <i class="icon-down-open"></i>
+        </div>
       </div>
     </header>
+    <main>
+      <aside class="left-sidebar">
+        <div class="profile">
+          <div class="profile-background"></div>
+          <div class="profile-card">
+            <img src="./images/avatar.png" alt="avatar" />
+            <p class="profile-card-name">Cameron Williamson</p>
+            <span class="profile-card-title">Business Analyst</span>
+          </div>
+          <hr />
+          <div>
+            <div class="profile-stats">
+              <p class="profile-stats-title">Who viewed your profile</p>
+              <p class="profile-stats-count">90</p>
+            </div>
+            <div class="profile-stats">
+              <p class="profile-stats-title">Views of your post</p>
+              <p class="profile-stats-count">627</p>
+            </div>
+          </div>
+        </div>
+        <div class="tag">
+          <div class="tag-wrapper">
+            <h4>Newest</h4>
+            <div class="hr"></div>
+            <ul class="tag-wrapper-list">
+              <li># <span>money</span></li>
+              <li># <span>economy</span></li>
+              <li># <span>markets</span></li>
+              <li># <span>futurism</span></li>
+            </ul>
+          </div>
+          <div class="tag-wrapper">
+            <h4>Group</h4>
+            <div class="hr"></div>
+            <ul class="tag-wrapper-list">
+              <li>
+                <i class="icon-users"></i> <span>Android Developers Group</span>
+              </li>
+              <li><i class="icon-users"></i> <span>User Interface</span></li>
+              <li><i class="icon-users"></i> <span>User Experience</span></li>
+              <li><i class="icon-users"></i> <span>Design Thinking</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="event">
+          <p class="event-title">Add Event</p>
+          <span class="event-icon-wrapper"><i class="icon-plus"></i></span>
+        </div>
+        <div class="more">
+          <button>Find more</button>
+        </div>
+      </aside>
+      <section class="main-content">
+        <div class="share">
+          <textarea placeholder="Create Post..."></textarea>
+          <div class="share-option">
+            <div><i class="icon-camera"></i> <span>Photo</span></div>
+            <div><i class="icon-video"></i> <span>Video</span></div>
+            <div><i class="icon-calendar"></i> <span>Event</span></div>
+            <div>
+              <i class="icon-thumbs-up"></i> <span>Write Articles</span>
+            </div>
+          </div>
+        </div>
+        <div class="filter">
+          <p>Filter post by :</p>
+          <div class="filter-dropdown">
+            <span>Popular</span>
+            <i class="icon-down-open"></i>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <div class="card-header-info">
+              <img src="./images/avatar.png" />
+              <div class="meta">
+                <p class="meta-name">Brooklyn Simmons</p>
+                <p class="meta-title">UI/UX Designer at Freelance</p>
+                <span class="meta-time">7 hour ago</span>
+              </div>
+            </div>
+            <div class="detail">
+              <i class="icon-dot-3"></i>
+            </div>
+          </div>
+          <div class="card-content">
+            <p class="card-content-text">
+              He said, Design is not just what it looks and feels like. Design
+              is how it work
+            </p>
+            <div class="card-content-tag">
+              <span>#stevejobs</span>
+              <span>#design</span>
+              <span>#apple</span>
+            </div>
+            <img class="card-content-img" src="./images/stevejobs.png" />
+            <div class="card-content-count">
+              <div class="count-icon">
+                <i class="icon-heart"></i>
+                <i class="icon-thumbs-up"></i>
+              </div>
+              <div class="count-info">
+                <span> 172 </span>
+                <span> - </span>
+                <span> 10 Comments </span>
+              </div>
+            </div>
+            <div class="hr"></div>
+            <div class="card-content-stats">
+              <div>
+                <i class="icon-thumbs-up"></i>
+                <span>Like</span>
+              </div>
+              <div>
+                <i class="icon-message"></i>
+                <span>Comment</span>
+              </div>
+              <div>
+                <i class="icon-share"></i>
+                <span>Share</span>
+              </div>
+              <div>
+                <i class="icon-send"></i>
+                <span>Send</span>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <img src="./images/avatar.png" />
+            <input type="text" placeholder="Write comment" />
+            <div class="hr"></div>
+            <i class="icon-camera"></i>
+          </div>
+        </div>
+      </section>
+      <aside class="right-sidebar"></aside>
+    </main>
   </body>
 </html>

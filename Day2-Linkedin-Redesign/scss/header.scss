@@ -1,9 +1,15 @@
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 56px;
-
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1040px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 56px;
+  }
+  margin-bottom: 16px;
+  background-color: #fff;
   &-logo {
     display: flex;
     align-items: center;

@@ -3,6 +3,7 @@ main {
   margin-left: auto;
   margin-right: auto;
   display: flex;
+  position: relative;
   .left-sidebar {
     width: 270px;
     .profile {
@@ -265,10 +266,28 @@ main {
           justify-content: flex-start;
           align-items: center;
           .count-icon {
+            i::after {
+              content: "";
+              width: 11px;
+              height: 11px;
+              border-radius: 50%;
+              background: rgba(#e52a34, 0.32);
+              position: absolute;
+              top: 1px;
+              left: 2px;
+              z-index: -1;
+            }
             .icon-heart {
+              position: relative;
+              z-index: 1;
               color: #e52a34;
             }
             .icon-thumbs-up {
+              position: relative;
+              z-index: 1;
+              &::after {
+                background: rgba(#388bf2, 0.32);
+              }
               color: #388bf2;
             }
           }
@@ -476,6 +495,43 @@ main {
             height: 12px;
             width: 44px;
           }
+        }
+      }
+    }
+  }
+  .message {
+    position: fixed;
+    right: 50;
+    bottom: 0;
+    background-color: rgba(0, 102, 153, 1);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 270px;
+    height: 56px;
+    padding: 12px;
+    border-top-left-radius: $radius-medium;
+    border-top-right-radius: $radius-medium;
+    font-size: 14px;
+
+    &-status {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        height: 32px;
+        width: 32px;
+        border-radius: 50%;
+        border: 1px solid white;
+        margin-right: 8px;
+      }
+    }
+    &-buttons {
+      i {
+        font-size: 16px;
+        &:not(:last-child) {
+          margin-right: 5px;
         }
       }
     }

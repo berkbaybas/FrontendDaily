@@ -81,8 +81,7 @@ main {
               margin-bottom: 8px;
             }
             .icon-users {
-              height: 12px;
-              width: 12px;
+              font-size: 12px;
             }
           }
         }
@@ -170,7 +169,7 @@ main {
         .icon-calendar {
           color: #fc8338;
         }
-        .icon-thumbs-up {
+        .icon-edit {
           color: #e52a34;
         }
         span {
@@ -352,6 +351,8 @@ main {
       }
       &-company {
         display: flex;
+        justify-content: center;
+        align-items: center;
         margin-top: 16px;
         img {
           height: 24px;
@@ -373,7 +374,11 @@ main {
           background-color: transparent;
           border: 1.5px solid $active-blue;
           border-radius: 4px;
-          padding: 5px;
+          width: 24px;
+          height: 24px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
           i {
             color: $active-blue;
           }

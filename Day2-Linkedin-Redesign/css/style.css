@@ -339,8 +339,7 @@ main .left-sidebar .tag-wrapper-list li:not(:last-child) {
   margin-bottom: 8px;
 }
 main .left-sidebar .tag-wrapper-list li .icon-users {
-  height: 12px;
-  width: 12px;
+  font-size: 12px;
 }
 main .left-sidebar .tag-wrapper:first-child {
   margin-bottom: 36px;
@@ -415,7 +414,7 @@ main .main-content .share-option .icon-video {
 main .main-content .share-option .icon-calendar {
   color: #fc8338;
 }
-main .main-content .share-option .icon-thumbs-up {
+main .main-content .share-option .icon-edit {
   color: #e52a34;
 }
 main .main-content .share-option span {
@@ -586,6 +585,8 @@ main .right-sidebar .feeds .hr {
 }
 main .right-sidebar .feeds-company {
   display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 16px;
 }
 main .right-sidebar .feeds-company img {
@@ -606,7 +607,11 @@ main .right-sidebar .feeds-company button {
   background-color: transparent;
   border: 1.5px solid #006699;
   border-radius: 4px;
-  padding: 5px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 main .right-sidebar .feeds-company button i {
   color: #006699;

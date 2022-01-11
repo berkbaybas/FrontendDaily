@@ -264,6 +264,7 @@ main {
   margin-left: auto;
   margin-right: auto;
   display: flex;
+  position: relative;
 }
 main .left-sidebar {
   width: 270px;
@@ -504,11 +505,29 @@ main .main-content .card-content-count {
   justify-content: flex-start;
   align-items: center;
 }
+main .main-content .card-content-count .count-icon i::after {
+  content: "";
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: rgba(229, 42, 52, 0.32);
+  position: absolute;
+  top: 1px;
+  left: 2px;
+  z-index: -1;
+}
 main .main-content .card-content-count .count-icon .icon-heart {
+  position: relative;
+  z-index: 1;
   color: #e52a34;
 }
 main .main-content .card-content-count .count-icon .icon-thumbs-up {
+  position: relative;
+  z-index: 1;
   color: #388bf2;
+}
+main .main-content .card-content-count .count-icon .icon-thumbs-up::after {
+  background: rgba(56, 139, 242, 0.32);
 }
 main .main-content .card-content-count .count-info {
   margin-left: 22px;
@@ -703,6 +722,40 @@ main .right-sidebar .sidebar-footer footer .company-info p {
 main .right-sidebar .sidebar-footer footer .company-info img {
   height: 12px;
   width: 44px;
+}
+main .message {
+  position: fixed;
+  right: 50px;
+  bottom: 0;
+  background-color: #006699;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 270px;
+  height: 56px;
+  padding: 12px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  font-size: 14px;
+}
+main .message-status {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .message-status img {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  border: 1px solid white;
+  margin-right: 8px;
+}
+main .message-buttons i {
+  font-size: 16px;
+}
+main .message-buttons i:not(:last-child) {
+  margin-right: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */
